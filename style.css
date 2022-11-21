@@ -1,0 +1,912 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Poppins', sans-serif; */
+}
+html {
+  scroll-behavior: smooth;
+}
+.top-nav{
+    display: flex;
+    justify-content: space-around;
+    height: 120px;
+    border: 2px ;
+    background-color: #02172d;
+    position: sticky;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+.top-nav a{
+    color: white;
+    display: flex;
+align-items: center;
+}
+a{
+    text-decoration: none;
+  }
+  .fa-bars-progress{
+    width: 40px;
+    color: white;
+    margin-top: -60px;
+  }
+
+  #welcome h1{
+    padding: 40px;
+    font-size: 40px;
+    text-align: center;
+    height: 150px;
+    font-family: 'Poppins', sans-serif;
+
+    background-color: cyan;
+    border: 2px solid orange;
+    border-radius: 0px 360px 0px 0px;
+    text-shadow: 10px 20px 30px blue;
+    animation: mymove 1s infinite;
+  }
+  @keyframes mymove {
+    50% {border-bottom-left-radius:500px;}
+  }
+  #home{
+    height: 550px;
+    background-color: #020222;
+  }
+ 
+  
+  .left-side{
+ float: left;
+ width: 49%;
+ height: 350px;
+ border: 1px ;
+ padding-top: 20px;
+  }
+  .right-side{
+    padding-top: 20px;
+    float: right;
+    width: 49%;
+    height: 350px;
+    border: 1px ;
+   
+ 
+  }
+  
+  .left-side img{
+    float: right;
+       height: 340px;
+       width: 100%;
+       border-radius: 40px;
+     }
+.hello{
+  font-size: 30px;
+  width: 80%;
+  border-radius: 20px;
+ padding-top: 30px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+height: 200px;
+background: red;
+position: relative;
+animation: myfirst 10s infinite;
+animation-direction: alternate;
+}
+@keyframes myfirst {
+  0%   {background: rgb(214, 20, 166); left: 0px; top: 0px;}
+  25%  {background: yellow; left: 100px; top: 0px;}
+  50%  {background: hsl(198, 28%, 93%); left: 100px; top: 150px;}
+  75%  {background: green; left: 0px; top: 100px;}
+  100% {background: rgb(117, 210, 10); left: 0px; top: 0px;}
+  }
+/* about */
+#me h1{
+  text-align: center;
+  color: rgb(232, 14, 14);
+  padding-top: 20px;
+  width: 90%;
+  height: 80px;
+  background: rgb(240, 230, 235);
+  position: relative;
+  animation: move 5s infinite;
+}
+@keyframes move {
+  from {left: 0px;}
+  to {left: 100px;}
+}
+
+
+#about{
+  height: 500px;
+  background-color: #e6ffe0;
+  padding-top: 20px;
+}
+  .right-image img{
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    float: right;
+    shape-outside: circle(50%);
+  
+ 
+  }
+
+.work{
+height: 400px;
+  }
+  .engineer p{
+    padding: 100px 0 0 40px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-color: rgb(0, 251, 255); */
+    font-size: 25px;
+   
+  }
+ 
+ /* skills */
+ #skills{
+  height: 550px;
+ }
+ .strong{
+  padding-top: 20px;
+ }
+.strong h1{ 
+  text-align: center;
+  color: rgb(148, 10, 10);
+  padding-top: 20px;
+  width: 90%;
+  height: 80px;
+  background: rgb(240, 230, 235);
+  position: relative;
+  animation: go 5s infinite;
+}
+@keyframes go {
+  from {left: 100px;}
+  to {left: 0px;}
+}
+.creative{
+  text-align: center;
+ padding-left: 400px;
+ padding-right: 400px;
+  border: 2px ;
+  height: 120px;
+}
+.creative p{
+  text-align: center;
+  font-size: 20px;
+  height: 80px;
+  padding-top: 35px;
+
+
+}
+.skills{
+  display: flex;
+  justify-content: space-around;
+}
+.fa-solid{
+ 
+  font-size: 40px;
+ padding-top: 100px;
+}
+.excellent,.verrygood,.good{
+  height: 300px;
+  width: 30%;
+  border: 1px solid;
+  text-align: center;
+  background-color: rgb(27, 145, 126);
+}
+
+.verrygood img,.good img,.excellent img{
+  margin-top: 15px;
+  border: 1px ;
+  height: 110px;
+  width: 110px;
+  border-radius: 100px;
+} 
+
+/* my work */
+#work{
+  height: 550px;
+  background-color: #e6ffe0;
+}
+.restourant,.khan,.level{
+  height: 300px;
+  width: 30%;
+border-radius: 20px;
+  background-color: gray;
+  padding-top: 15px;
+  text-align: center;
+
+}
+
+.restourant img,.khan img,.level img{
+  height: 250px;
+  width: 90%;
+ 
+} 
+
+/* contact */
+#contact{
+  height: 550px;
+}
+.contact{
+  text-align: center;
+}
+.contact-me{
+  padding-top: 20px;
+  height: 80px;
+}
+.free{
+  height: 80px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.free p{
+  font-size: 20px;
+  /* padding-left: 200px;
+  padding-right: 200px; */
+}
+
+.name,.email{
+  width: 500px;
+  height: 50px;
+ background-color: rgb(233, 224, 224);
+ font-size: 20px;
+ border: 2px solid;
+
+}
+.object{
+  width: 1010px;
+  height: 50px;
+  background-color: rgb(233, 224, 224);
+  font-size: 20px;
+  border: 2px solid;
+
+}
+#text{
+  width: 1010px;
+  height: 140px;
+  background-color: rgb(233, 224, 224);
+  font-size: 20px;
+  border: 2px solid;
+}
+.submit{
+ text-align: center;
+ padding-top: 15px;
+  
+}
+.send{
+  width: 300px;
+  height: 45px;
+  background-color: rgb(19, 225, 228);
+  border-radius: 10px;
+  font-size: 20px;
+  border: 2px solid;
+}
+.write{
+  padding-top: 20px;
+}
+
+
+/* blog */
+#awesome{
+  height: 650px;
+  background-color: #e6ffe0;
+}
+.font-icon{
+  display: flex;
+  justify-content: space-around;
+}
+.more{
+  text-align: center;
+  padding-top: 15px;
+   
+ }
+ .send{
+   width: 300px;
+   height: 45px;
+   text-align: center;
+ }
+ .introduction,.stapler,.designer{
+  width: 32%;
+  background-color: goldenrod;
+  text-align: center;
+  padding-top: 30px;
+  border-radius: 20px;
+}  
+
+ /* footer */
+ .footer{
+  display: flex;
+ justify-content: space-around;
+ height: 250px;
+ background-color: #02172d;
+}
+.address{
+  margin-top: 40px;
+  color: white;
+  width: 50%;
+padding-left: 90px;
+}
+.addres{
+  margin-top: 40px;
+  color: white;
+  width: 50%;
+  text-align: center;
+}
+.icon{
+  margin-top: 40px;
+  font-size: 30px;
+
+}
+.fa-brands{
+  color: white;
+  border: 2px solid;
+  border-radius: 25px;
+  padding: 7px;
+  background-color: rgb(18, 129, 199);
+}
+.fa-twitter,.fa-github{
+  margin-left: 15px;
+}
+
+.link a{
+  display: block;
+  color: white;
+  font-size: 30px;
+  
+
+}
+.call{
+  padding-top: 20px;
+  font-size: 20px;
+}
+h2>span{
+  font-size: 17px;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 375px) and (min-width: 50px) {
+  
+  #home{
+    height: 900px;
+    background-color: #020222;
+  }
+  .left-side{
+    float: none;
+    width: 100%;
+     }
+     .right-side{
+       float: none;
+       width: 100%;
+     }
+     .hello{
+      font-size: 20px;
+      width: 60%;
+     padding-top: 30px;
+    height: 200px;
+    }
+    #me h1{
+      width: 90%;
+    }
+    @keyframes move {
+      from {left: 0px;}
+      to {left: 20px;}
+    }
+  .top-nav a{
+font-size: 12px;
+}
+.fa-bars-progress{
+  display: none;
+}
+#welcome h1{
+  font-size: 25px;
+}
+#about{
+  height: 560px;
+}
+    .engineer p{
+      padding: 10px 0 0 5px;
+      font-size: 20px;
+    }
+    .right-image img{
+      width: 200px;
+      height: 200px;
+    }
+#skills{
+  height: 1280px;
+ }
+ .strong h1{ 
+  text-align: center;
+  color: rgb(148, 10, 10);
+  padding-top: 20px;
+  width: 90%;
+  height: 80px;
+}
+@keyframes go {
+  from {left: 20px;}
+  to {left: 0px;}
+}
+  .creative{
+   padding-left: 10px;
+   padding-right: 10px;
+    height: 130px;
+  }
+  .skills{
+    display: block;
+  }
+  #work{
+    height: 1280px;
+  }
+  .excellent,.verrygood,.good{
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .next{
+   text-align: center;
+  }
+  .fa-solid{
+   padding-top: 10px;
+  }
+  .restourant,.khan,.level{
+    height: 300px;
+    width: 100%;
+   margin-top: 10px;
+  }
+  #contact{
+    height: 650px;
+  }
+  .free{
+    height: 90px;
+    padding-left:0px;
+    padding-right:0px;
+  }
+  .name,.email{
+    width: 300px;
+    margin-top: 20px;
+  }
+  .object{
+    width: 300px;
+  }
+  #text{
+    width: 300px;
+  }
+  #awesome{
+    height: 1300px;
+  }
+  .font-icon{
+    display: block;
+  }
+  .introduction,.stapler,.designer{
+    width: 100%;
+    margin-top: 10px;
+  } 
+  
+  .footer{
+   height: 150px;
+  }
+  .address{
+  padding-left: 0px;
+  font-size: 10px;
+  }
+  .addres{
+    text-align: none;
+    font-size: 10px;
+    padding-left: 10px;
+  }
+  .icon{
+    font-size: 10px;
+  }
+  .fa-twitter,.fa-github{
+    margin-left: 15px;
+  }
+  
+  .link a{
+    font-size: 13px;
+  }
+  .call{
+    font-size: 7px;
+  }
+  h2>span{
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) and (min-width:376px) {
+  #home{
+    height: 900px;
+    background-color: #020222;
+  }
+  .left-side{
+    float: none;
+    width: 100%;
+     }
+     .right-side{
+       float: none;
+       width: 100%;
+     }
+     .hello{
+      font-size: 20px;
+      width: 60%;
+     padding-top: 30px;
+    height: 200px;
+    }
+    #me h1{
+      width: 90%;
+    }
+    @keyframes move {
+      from {left: 0px;}
+      to {left: 20px;}
+    }
+  .top-nav a{
+font-size: 12px;
+}
+.fa-bars-progress{
+    margin-top: 20px;
+}
+#welcome h1{
+  font-size: 25px;
+}
+#about{
+  height: 510px;
+}
+.engineer p{
+  padding: 10px 0 0 5px;
+  font-size: 20px;
+}
+.right-image img{
+  width: 200px;
+  height: 200px;
+}
+#skills{
+  height: 1280px;
+ }
+ .strong h1{ 
+  text-align: center;
+  color: rgb(148, 10, 10);
+  padding-top: 20px;
+  width: 90%;
+  height: 80px;
+}
+@keyframes go {
+  from {left: 20px;}
+  to {left: 0px;}
+}
+  .creative{
+   padding-left: 10px;
+   padding-right: 10px;
+    height: 130px;
+  }
+  .skills{
+    display: block;
+  }
+  #work{
+    height: 1350px;
+  }
+  .excellent,.verrygood,.good{
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .next{
+   text-align: center;
+  }
+  .fa-solid{
+   padding-top: 10px;
+  }
+  .restourant,.khan,.level{
+    height: 320px;
+    width: 100%;
+   margin-top: 10px;
+  }
+  #contact{
+    height: 650px;
+  }
+  .free{
+    height: 90px;
+  }
+  .name,.email{
+    width: 400px;
+    margin-top: 20px;
+  }
+  .object{
+    width: 400px;
+  }
+  #text{
+    width: 400px;
+  }
+  #awesome{
+    height: 1300px;
+  }
+  .font-icon{
+    display: block;
+  }
+  .introduction,.stapler,.designer{
+    width: 100%;
+    margin-top: 10px;
+  } 
+  
+  .footer{
+   height: 150px;
+  }
+  .address{
+  padding-left: 0px;
+  font-size: 10px;
+  }
+  .addres{
+    text-align: none;
+    font-size: 10px;
+    padding-left: 10px;
+  }
+  .icon{
+    font-size: 15px;
+  }
+  .fa-twitter,.fa-github{
+    margin-left: 15px;
+  }
+  
+  .link a{
+    font-size: 20px;
+  }
+  .call{
+    font-size: 12px;
+  }
+  h2>span{
+    font-size: 15px;
+  }
+
+}
+@media screen and (max-width: 700px) and (min-width:551px) {
+  #home{
+    height: 900px;
+    background-color: #020222;
+  }
+  .left-side{
+    float: none;
+    width: 100%;
+     }
+     .right-side{
+       float: none;
+       width: 100%;
+     }
+     .hello{
+      font-size: 25px;
+      width: 80%;
+     padding-top: 30px;
+    height: 200px;
+    }
+    #me h1{
+      width: 90%;
+    }
+    @keyframes move {
+      from {left: 0px;}
+      to {left: 20px;}
+    }
+  .top-nav a{
+font-size: 15px;
+}
+.fa-bars-progress{
+    margin-top: 20px;
+}
+#welcome h1{
+  font-size: 25px;
+}
+#about{
+  height: 380px;
+}
+.engineer p{
+  padding: 10px 0 0 5px;
+  font-size: 20px;
+}
+.right-image img{
+  width: 200px;
+  height: 200px;
+}
+#skills{
+  height: 1280px;
+ }
+ .strong h1{ 
+  text-align: center;
+  color: rgb(148, 10, 10);
+  padding-top: 20px;
+  width: 90%;
+  height: 80px;
+}
+@keyframes go {
+  from {left: 20px;}
+  to {left: 0px;}
+}
+  .creative{
+   padding-left: 10px;
+   padding-right: 10px;
+    height: 130px;
+  }
+  .skills{
+    display: block;
+  }
+  #work{
+    height: 1350px;
+  }
+  .excellent,.verrygood,.good{
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .next{
+   text-align: center;
+  }
+  .fa-solid{
+   padding-top: 10px;
+  }
+  .restourant,.khan,.level{
+    height: 320px;
+    width: 100%;
+   margin-top: 10px;
+  }
+  #contact{
+    height: 650px;
+  }
+  .free{
+    height: 90px;
+  }
+  .name,.email{
+    width: 500px;
+    margin-top: 20px;
+  }
+  .object{
+    width: 500px;
+  }
+  #text{
+    width: 500px;
+  }
+  #awesome{
+    height: 1300px;
+  }
+  .font-icon{
+    display: block;
+  }
+  .introduction,.stapler,.designer{
+    width: 100%;
+    margin-top: 10px;
+  } 
+  
+  .footer{
+   height: 150px;
+  }
+  .address{
+  padding-left: 0px;
+  font-size: 10px;
+  }
+  .addres{
+    text-align: none;
+    font-size: 10px;
+    padding-left: 10px;
+  }
+  .icon{
+    font-size: 15px;
+  }
+  .fa-twitter,.fa-github{
+    margin-left: 15px;
+  }
+  
+  .link a{
+    font-size: 20px;
+  }
+  .call{
+    font-size: 12px;
+  }
+  h2>span{
+    font-size: 15px;
+  }
+
+
+}
+@media screen and (max-width: 900px) and (min-width: 701px) {
+  .top-nav a{
+    font-size: 20px;
+    }
+  #home{
+    height: 580px;
+    background-color: #020222;
+  }
+  .hello{
+    font-size: 25px;
+    width: 70%;
+   padding-top: 30px;
+  height: 235px;
+  }
+  #about{
+    height: 600px;
+  }
+  #me h1{
+    width: 95%;
+  }
+  @keyframes move {
+    from {left: 0px;}
+    to {left: 30px;}
+  }
+  .strong h1{ 
+    /* text-align: center;
+    color: rgb(148, 10, 10);
+    padding-top: 20px; */
+    width: 95%;
+    height: 80px;
+  }
+  @keyframes go {
+    from {left: 20px;}
+    to {left: 0px;}
+  }
+  #work{
+    height: 580px;
+  }
+  .engineer p{
+    padding: 10px 0 0 10px;
+    font-size: 29px;
+  }
+  .creative{
+    padding-left: 10px;
+    padding-right: 10px;
+     height: 130px;
+   }
+   .academy{
+    font-size: 13px;
+   }
+   #contact{
+    height: 650px;
+  }
+  .name,.email{
+    width: 650px;
+    margin-top: 20px;
+  }
+  .object{
+    width: 650px;
+  }
+  #text{
+    width: 650px;
+  }
+}
+@media screen and (max-width: 1100px) and (min-width:901px) {
+  .engineer p{
+    padding: 60px 0 0 40px;
+  }
+  .creative{
+   padding-left: 200px;
+   padding-right: 200px;
+  }
+  .name,.email{
+    width: 440px;
+  }
+  .object{
+    width: 880px;
+  }
+  #text{
+    width: 880px;
+  }
+}
+@media screen and (max-width: 1100px) and (min-width: 901px) {
+  .top-nav a{
+   font-size: 25px;
+}
+.strong h1{ 
+  width: 97%;
+
+}
+@keyframes go {
+  from {left: 15px;}
+  to {left: 0px;}
+}
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1101px) {
+  .top-nav a{
+    font-size: 25px;
+ }
+  .free{
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+}
+

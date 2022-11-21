@@ -1,0 +1,32 @@
+
+div input{
+    width: 400px;
+    padding: 20px;
+    font-size: 20px;
+}
+div button{
+    width: 100px;
+    padding: 20px;
+    font-size: 20px;
+}
+div{
+    height: 100px;
+}
+h1{
+    font-size: 50px;
+    color: red;
+}
+
+table {
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

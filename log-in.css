@@ -1,0 +1,50 @@
+.contact{
+    text-align: center;
+    border: 2px solid;
+    width: 450px;
+    background-color: grey;
+    border: none;
+  }
+  .password,.email{
+    width: 400px;
+    height: 40px;
+    background-color: gainsboro;
+    border: none;
+    
+  }
+  .submit{
+   text-align: center;
+   padding-top: 15px;
+    
+  }
+  .send{
+    width:410px;
+    height: 40px;
+    background-color: gainsboro;
+    border: none;
+  }
+  .write{
+    padding-top: 20px;
+  }
+  .submitd{
+    text-align: center;
+    padding-top: 15px;
+     
+   }
+  .others{
+    width: 205px;
+    height: 40px;
+    background-color: gainsboro;
+    border: none;
+  }
+  .center-cont{
+   display: flex;
+   justify-content: center;
+   padding-top: 100px;
+  }
+  a span{
+    color: red;
+  }
+  a{
+    text-decoration: none;
+  }
