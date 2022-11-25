@@ -1,20 +1,87 @@
+.topNav{
+  display: flex;
+  width: 100%;
+  background-color: yellowgreen;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+.show{
+  width: 40%;
+  
+}
 
+/* sidebar */
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(17, 17, 17);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  height: 100px;
+ 
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/* dashboard */
 div input{
     width: 400px;
     padding: 20px;
     font-size: 20px;
 }
-div button{
-    width: 100px;
+div button,#date{
+    width: 150px;
     padding: 20px;
     font-size: 20px;
-}
-div{
-    height: 100px;
-}
-h1{
-    font-size: 50px;
-    color: red;
+    margin-left: 5px;
 }
 
 table {
@@ -30,3 +97,174 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+
+/* messages */
+.title{
+  display:flex;
+}
+.name,.email,.dates{
+  width: 20%
+}
+.message{
+  width: 40%;
+}
+/* dashboard queries*/
+@media screen and (max-width: 375px) and (min-width: 0px) {
+
+  .topNav{
+    display: block;
+    width: 100%;
+  }
+  .show{
+    width: 00%;
+  }
+
+  .add-article{
+  display: block;
+  height: 250px;
+}
+div input{
+  width: 227px;
+}
+div button,#date{
+  width: 227px;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+#update{
+  width: 270px;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+}
+
+@media screen and (max-width: 550px) and (min-width: 376px) {
+  .topNav{
+    display: block;
+    width: 100%;
+  }
+  .show{
+    width: 100%;
+  }
+
+  .add-article{
+  display: block;
+  height: 250px;
+}
+div input{
+  width: 335px;
+}
+div button,#date{
+  width: 335px;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+#update{
+  width: 377px;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 551px) {
+  .topNav{
+    display: block;
+    width: 100%;
+  }
+  .show{
+    width: 100%;
+  }
+
+  .add-article{
+  display: block;
+  height: 250px;
+  /* background-color: red; */
+}
+div input{
+  width: 675px;
+}
+div button,#date{
+  width: 675px;
+  margin-top: 5px;
+}
+#update{
+  width: 720px;
+  margin-top: 5px;
+}
+
+}
+
+/* addmin */
+@media screen and (max-width: 319px) and (min-width: 0px) {
+  .sidebar a {
+    padding: 8px 8px 0px 8px;
+  }
+  .contact{
+    width: 100%;
+    height: 100%;
+  }
+  .title{
+    display: block;
+  }
+  .name,.email,.dates,.message{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) and (min-width: 320px) {
+  .sidebar a {
+    padding: 8px 8px 0px 10px;
+  }
+  .contact{
+    width: 100%;
+    height: 100%;
+  }
+  .title{
+    display: block;
+  }
+  .name,.email,.dates,.message{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) and (min-width: 376px) {
+  .sidebar a {
+    padding: 8px 0px 0px 2px;
+    font-size: 10px;
+  }
+  .contact{
+    width: 280px;
+    height: 480px;
+  }
+  .title{
+    display: block;
+  }
+  .name,.email,.dates,.message{
+    width: 100%;
+  }
+  .sidebar button{
+    width: 70%;
+  }
+  .sidebar{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 551px) {
+  .sidebar button{
+    width: 85%;
+  }
+  .sidebar{
+    text-align: center;
+  }
+  .title{
+    display: block;
+  }
+  
+  .message p{
+    width: 100%;
+  }
+}
+

@@ -55,18 +55,18 @@ a{
   }
   .search-container{
    
-    padding-left: 460px;
+    padding-left: 450px;
  
-    height: 80px;
+    height: 100px;
   }
   #search{
-    padding: 10px;
+    padding: 15px;
     width: 300px;
     font-size: 20px;
   }
   .fa-search{
-    padding: 10px;
-    font-size: 20px;
+    padding: 5px;
+    font-size: 15px;
    
   }
   
@@ -78,7 +78,7 @@ a{
   }
 
 #awesome{
-    height: 1100px;
+    height: 1750px;
     background-color: #e6ffe0;
   }
   .font-icon{
@@ -87,13 +87,14 @@ a{
   }
   .more{
     text-align: center;
-    padding: 25px 400px 0 400px;
+    padding-top: 15px;
     height: 100px;
+     
    }
-   .more>button{
-    width: 200px;
-    padding: 10px;
-    font-size: 20px;
+   .send{
+     width: 300px;
+     height: 45px;
+     text-align: center;
    }
 .introduction,.stapler,.designer{
     width: 32%;
@@ -101,6 +102,7 @@ a{
     text-align: center;
     padding-top: 30px;
     border-radius: 20px;
+    height: 350px;
 }  
 .fonts{
     padding-top: 40px;
@@ -151,3 +153,458 @@ a{
   h2>span{
     font-size: 17px;
   }
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  /* comment */
+
+  #user-comment{
+    padding-top: 50px;
+    padding-left: 15px;
+    height: 700px;
+
+  }
+  #name{
+    width: 600px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+#comment{
+    margin-top: 10px;
+    width: 600px;
+    padding: 30px;
+    height: 200px;
+}
+button{
+  margin-top: 10px;
+    padding: 15px;
+}
+.reaction span{
+    border: 2px;
+    border-radius: 100px;
+    background-color: red;
+    padding: 10px;
+}
+.reaction button{
+  border: none;
+  background-color: #e6ffe0;
+  font-size: 20px;
+}
+.detail p{
+    margin-top: 10px;
+
+}
+
+
+  @media screen and (max-width: 320px) and (min-width:0px) {
+    #awesome{
+      height: 2800px;
+    }
+    .introduction,.stapler,.designer{
+      height: 265px;
+      width: 100%;
+     margin-top: 10px;
+     padding-top: 15px;
+    }
+    .font-icon{
+      display: block;
+    }
+    .fonts{
+     
+      display: block;
+    }
+    .strong h1{ 
+      text-align: center;
+      color: rgb(148, 10, 10);
+      padding-top: 20px;
+      width: 90%;
+      height: 80px;
+    }
+    @keyframes go {
+      from {left: 20px;}
+      to {left: 0px;}
+    }
+    .creative{
+      padding-left: 0px;
+      padding-right: 0px;
+       height: 130px;
+     }
+     .photo{
+      padding: 0px 10px 0 10px;
+    }
+    .search-container{
+   /* text-align: center; */
+      padding-left: 20px;
+   
+      height: 80px;
+    }
+    #search{
+      padding: 15px;
+      width: 200px;
+      font-size: 15px;
+    }
+    .fa-search{
+      padding: 0px;
+      font-size: 10px;
+    }
+    .more{
+      text-align: center;
+      padding: 25px 0px 0 0px;
+      height: 100px;
+     }
+     .send{
+      width: 200px;
+      
+    }
+
+    .footer{
+      height: 150px;
+     }
+     .address{
+     padding-left: 0px;
+     font-size: 7px;
+     }
+     .addres{
+       text-align: none;
+       font-size: 7px;
+       padding-left: 10px;
+     }
+     .icon{
+       font-size: 8px;
+     }
+     .fa-twitter,.fa-github{
+       margin-left: 15px;
+     }
+     
+     .link a{
+       font-size: 13px;
+     }
+     .call{
+       font-size: 7px;
+     }
+     h2>span{
+       font-size: 10px;
+     }
+     /* comments*/
+     #user-comment{
+      height: 730px;
+  
+    }
+     #comment{
+      width: 250px;
+      margin-top: 5px;
+  }
+  #name{
+    width: 250px;
+   
+}
+  } 
+  @media screen and (max-width: 375px) and (min-width:320px){
+    #awesome{
+      height: 2500px;
+    }
+    .introduction,.stapler,.designer{
+      height: 310px;
+      width: 100%;
+     margin-top: 10px;
+     padding-top: 10px;
+    }
+    .font-icon{
+      display: block;
+    }
+    .fonts{
+     
+      display: block;
+    }
+    .strong h1{ 
+      text-align: center;
+      color: rgb(148, 10, 10);
+      padding-top: 20px;
+      width: 90%;
+      height: 80px;
+    }
+    @keyframes go {
+      from {left: 20px;}
+      to {left: 0px;}
+    }
+    .creative{
+      padding-left: 0px;
+      padding-right: 0px;
+       height: 130px;
+     }
+    .search-container{
+   /* text-align: center; */
+      padding-left: 60px;
+   
+      height: 80px;
+    }
+    #search{
+      padding: 17px;
+      width: 200px;
+      font-size: 10px;
+    }
+    .fa-search{
+      padding: 2px;
+      font-size: 10px;
+    }
+    .more{
+      text-align: center;
+      padding: 25px 0px 0 0px;
+      height: 100px;
+     }
+
+    .footer{
+      height: 150px;
+     }
+     .address{
+     padding-left: 0px;
+     font-size: 10px;
+     }
+     .addres{
+       text-align: none;
+       font-size: 10px;
+       padding-left: 10px;
+     }
+     .icon{
+       font-size: 10px;
+     }
+     .fa-twitter,.fa-github{
+       margin-left: 15px;
+     }
+     
+     .link a{
+       font-size: 13px;
+     }
+     .call{
+       font-size: 7px;
+     }
+     h2>span{
+       font-size: 10px;
+     }
+
+      /* comments*/
+      #user-comment{
+        height: 620px;
+    
+      }
+       #comment{
+        width: 320px;
+        margin-top: 5px;
+        height: 150px;
+    }
+    #name{
+      width: 320px;
+     
+  }
+  } 
+  @media screen and (max-width: 550px) and (min-width:376px){
+    #awesome{
+      height: 2600px;
+    }
+    .introduction,.stapler,.designer{
+      height: 320px;
+      width: 100%;
+     margin-top: 10px;
+     padding-top: 10px;
+    }
+    .font-icon{
+      display: block;
+    }
+    .fonts{
+     
+      display: block;
+    }
+    .strong h1{ 
+      text-align: center;
+      color: rgb(148, 10, 10);
+      padding-top: 20px;
+      width: 90%;
+      height: 80px;
+    }
+    @keyframes go {
+      from {left: 20px;}
+      to {left: 0px;}
+    }
+    .creative{
+      padding-left: 0px;
+      padding-right: 0px;
+       height: 130px;
+     }
+     .photo{
+      padding: 0px 10px 0 10px;
+    }
+    .search-container{
+   /* text-align: center; */
+      padding-left: 60px;
+   
+      height: 80px;
+    }
+    #search{
+      padding: 15px;
+      width: 200px;
+      font-size: 15px;
+    }
+    .fa-search{
+      padding: 0px;
+      font-size: 10px;
+    }
+    .more{
+      text-align: center;
+      padding: 25px 0px 0 0px;
+      height: 100px;
+     }
+
+    .footer{
+      height: 150px;
+     }
+     .address{
+     padding-left: 0px;
+     font-size: 10px;
+     }
+     .addres{
+       text-align: none;
+       font-size: 10px;
+       padding-left: 10px;
+     }
+     .icon{
+       font-size: 10px;
+     }
+     .fa-twitter,.fa-github{
+       margin-left: 15px;
+     }
+     
+     .link a{
+       font-size: 13px;
+     }
+     .call{
+       font-size: 7px;
+     }
+     h2>span{
+       font-size: 10px;
+     }
+      /* comments*/
+      #user-comment{
+        height: 620px;
+    
+      }
+       #comment{
+        width: 360px;
+        margin-top: 5px;
+        height: 150px;
+    }
+    #name{
+      width: 360px;
+     
+  }
+  } 
+  @media screen and (max-width: 768px) and (min-width:551px){
+    .introduction,.stapler,.designer{
+      height: 235px;
+      /* width: 100%;
+     margin-top: 10px; */
+     padding-top: 10px;
+    }
+    .photo{
+      padding: 0px 10px 0 10px;
+    }
+    .strong h1{ 
+      text-align: center;
+      color: rgb(148, 10, 10);
+      padding-top: 20px;
+      width: 90%;
+      height: 80px;
+    }
+    @keyframes go {
+      from {left: 30px;}
+      to {left: 0px;}
+    }
+    .creative{
+      padding-left: 0px;
+      padding-right: 0px;
+       height: 130px;
+     }
+    .search-container{
+      /* text-align: center; */
+         padding-left: 160px;
+      
+         height: 80px;
+       }
+       #search{
+         padding: 15px;
+         width: 400px;
+         font-size: 15px;
+       }
+       .fa-search{
+         padding: 0px;
+         font-size: 15px;
+       }
+       .more{
+         text-align: center;
+         padding: 25px 0px 0 0px;
+         height: 100px;
+        }
+      
+  }
+  @media screen and (max-width: 920px) and (min-width:769px){
+    .introduction,.stapler,.designer{
+      height: 270px;
+   
+     padding-top: 10px;
+    }
+    .creative{
+      padding-left: 0px;
+      padding-right: 0px;
+       height: 130px;
+     }
+    .search-container{
+      /* text-align: center; */
+         padding-left: 250px;
+      
+         height: 110px;
+       }
+       #search{
+         padding: 20px;
+         width: 400px;
+         font-size: 15px;
+       }
+       .fa-search{
+         padding: 5px;
+         font-size: 15px;
+       }
+       .photo{
+        padding: 0px 10px 0 10px;
+      }
+    }
+      @media screen and (max-width: 1030px) and (min-width:921px){
+        .introduction,.stapler,.designer{
+          height: 300px;
+       
+         padding-top: 10px;
+        }
+        .creative{
+          padding-left: 0px;
+          padding-right: 0px;
+           height: 130px;
+         }
+        .search-container{
+          /* text-align: center; */
+             padding-left: 300px;
+          
+             height: 100px;
+           }
+           #search{
+             padding: 20px;
+             width: 400px;
+             font-size: 15px;
+           }
+           .fa-search{
+             padding: 5px;
+             font-size: 15px;
+           }
+           .photo{
+            padding: 0px 10px 0 10px;
+          }
+      }
