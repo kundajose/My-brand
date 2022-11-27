@@ -8,11 +8,8 @@ html {
   scroll-behavior: smooth;
 }
 #expand{
-  display: none;
- 
-}
-#closebtn {
-  display: none;
+  display:none;
+  
 }
 .top-nav{
     display: flex;
