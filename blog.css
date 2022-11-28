@@ -54,9 +54,7 @@ a{
     height: 90px;
   }
   .search-container{
-   
     padding-left: 450px;
- 
     height: 100px;
   }
   #search{
@@ -67,29 +65,24 @@ a{
   .fa-search{
     padding: 5px;
     font-size: 15px;
-   
   }
-  
   .creative p{
     text-align: center;
     font-size: 20px;
     height: 80px;
     padding-top: 35px;
   }
-
 #awesome{
     height: 1750px;
     background-color: #e6ffe0;
   }
   .font-icon{
-    display: flex;
-    justify-content: space-around;
+    height: 650px;
   }
   .more{
     text-align: center;
     padding-top: 15px;
     height: 100px;
-     
    }
    .send{
      width: 300px;
@@ -97,8 +90,7 @@ a{
      text-align: center;
    }
 .introduction,.stapler,.designer{
-    width: 32%;
-    background-color: goldenrod;
+    width: 100%;
     text-align: center;
     padding-top: 30px;
     border-radius: 20px;
@@ -108,70 +100,18 @@ a{
     padding-top: 40px;
     display: flex;
     justify-content: space-around;
-    
   }
-
-
-  /* footer */
-  .footer{
-    display: flex;
-   justify-content: space-around;
-   height: 250px;
-   background-color: #02172d;
-  }
-  .address{
-    margin-top: 40px;
-    color: white;
-  }
-  .icon{
-    margin-top: 40px;
-    font-size: 30px;
-  
-  }
-  .fa-brands{
-    color: white;
-    border: 2px solid;
-    border-radius: 25px;
-    padding: 7px;
-    background-color: rgb(18, 129, 199);
-  }
-  .fa-twitter,.fa-github{
-    margin-left: 15px;
-  }
-  
-  .link a{
-    display: block;
-    color: white;
-    font-size: 30px;
-    
-  
-  }
-  .call{
-    padding-top: 20px;
-    font-size: 20px;
-  }
-  h2>span{
-    font-size: 17px;
-  }
-  img {
-    height: auto;
-    max-width: 100%;
-  }
-
   /* comment */
-
   #user-comment{
     padding-top: 50px;
     padding-left: 15px;
     height: 700px;
-
   }
   #name{
     width: 600px;
     padding: 15px;
     margin-top: 10px;
 }
-
 #comment{
     margin-top: 10px;
     width: 600px;
@@ -195,7 +135,6 @@ button{
 }
 .detail p{
     margin-top: 10px;
-
 }
 /* validation */
 #username{
@@ -204,7 +143,6 @@ button{
 #wrong{
   color: red;
 }
-
   @media screen and (max-width: 320px) and (min-width:0px) {
     #awesome{
       height: 2800px;
@@ -219,7 +157,6 @@ button{
       display: block;
     }
     .fonts{
-     
       display: block;
     }
     .strong h1{ 
@@ -242,9 +179,7 @@ button{
       padding: 0px 10px 0 10px;
     }
     .search-container{
-   /* text-align: center; */
       padding-left: 20px;
-   
       height: 80px;
     }
     #search{
@@ -263,9 +198,7 @@ button{
      }
      .send{
       width: 200px;
-      
     }
-
     .footer{
       height: 150px;
      }
@@ -305,7 +238,6 @@ button{
   }
   #name{
     width: 250px;
-   
 }
   } 
   @media screen and (max-width: 375px) and (min-width:320px){
@@ -342,7 +274,6 @@ button{
        height: 130px;
      }
     .search-container{
-   /* text-align: center; */
       padding-left: 60px;
    
       height: 80px;
@@ -361,7 +292,6 @@ button{
       padding: 25px 0px 0 0px;
       height: 100px;
      }
-
     .footer{
       height: 150px;
      }
@@ -390,7 +320,6 @@ button{
      h2>span{
        font-size: 10px;
      }
-
       /* comments*/
       #user-comment{
         height: 620px;
@@ -403,7 +332,6 @@ button{
     }
     #name{
       width: 320px;
-     
   }
   } 
   @media screen and (max-width: 550px) and (min-width:376px){
@@ -443,9 +371,7 @@ button{
       padding: 0px 10px 0 10px;
     }
     .search-container{
-   /* text-align: center; */
       padding-left: 60px;
-   
       height: 80px;
     }
     #search{
@@ -462,7 +388,6 @@ button{
       padding: 25px 0px 0 0px;
       height: 100px;
      }
-
     .footer{
       height: 150px;
      }
@@ -494,7 +419,6 @@ button{
       /* comments*/
       #user-comment{
         height: 620px;
-    
       }
        #comment{
         width: 360px;
@@ -503,14 +427,11 @@ button{
     }
     #name{
       width: 360px;
-     
   }
   } 
   @media screen and (max-width: 768px) and (min-width:551px){
     .introduction,.stapler,.designer{
       height: 235px;
-      /* width: 100%;
-     margin-top: 10px; */
      padding-top: 10px;
     }
     .photo{
@@ -533,9 +454,7 @@ button{
        height: 130px;
      }
     .search-container{
-      /* text-align: center; */
          padding-left: 160px;
-      
          height: 80px;
        }
        #search{
@@ -552,12 +471,10 @@ button{
          padding: 25px 0px 0 0px;
          height: 100px;
         }
-      
   }
   @media screen and (max-width: 920px) and (min-width:769px){
     .introduction,.stapler,.designer{
       height: 270px;
-   
      padding-top: 10px;
     }
     .creative{
@@ -566,9 +483,7 @@ button{
        height: 130px;
      }
     .search-container{
-      /* text-align: center; */
          padding-left: 250px;
-      
          height: 110px;
        }
        #search{
@@ -587,7 +502,6 @@ button{
       @media screen and (max-width: 1030px) and (min-width:921px){
         .introduction,.stapler,.designer{
           height: 300px;
-       
          padding-top: 10px;
         }
         .creative{
@@ -596,9 +510,7 @@ button{
            height: 130px;
          }
         .search-container{
-          /* text-align: center; */
              padding-left: 300px;
-          
              height: 100px;
            }
            #search{
@@ -613,4 +525,12 @@ button{
            .photo{
             padding: 0px 10px 0 10px;
           }
+      }
+      .slide{
+        display: flex;
+        justify-content: space-around;
+      }
+      .introduction{display: none}
+      .headline{
+        font-size: 25px;
       }

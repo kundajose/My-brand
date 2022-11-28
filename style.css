@@ -156,7 +156,6 @@ height: 400px;
   justify-content: space-around;
 }
 .fa-solid{
- 
   font-size: 40px;
  padding-top: 100px;
 }
@@ -187,7 +186,6 @@ border-radius: 20px;
   padding-top: 15px;
   text-align: center;
 }
-
 .restourant img,.khan img,.level img{
   height: 250px;
   width: 90%;
@@ -218,7 +216,6 @@ border-radius: 20px;
  background-color: rgb(233, 224, 224);
  font-size: 20px;
  border: 2px solid;
-
 }
 .object{
   width: 1010px;
@@ -249,8 +246,6 @@ border-radius: 20px;
 .write{
   padding-top: 20px;
 }
-
-
 /* blog */
 #awesome{
   margin-top: 50px;

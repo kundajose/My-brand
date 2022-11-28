@@ -163,28 +163,28 @@
             that we can do more better together. My email: iradukundajose8@gmail.com 
           </P>
       </div>
-    <form id="form" action="" method="post">
+    <form id="form" action="" method="get">
        <div class="write">
         <div>
             <div>
-             <input type="text" placeholder="Your Name..." class="name">
+             <input type="text" placeholder="Your Name..." id="name" class="name">
            </div>
            <span id="username"></span>
-           <div>
-             <input type="text" placeholder="Your Email..." class="email">
+           <div name="form1">
+             <input type="text" name='text1' placeholder="Your Email..." id="email" class="email">
             </div>
              <span id="error"></span>
         </div>
         <div class="write">
-            <input type="text" placeholder="Subject..." class="object">
+            <input type="text" placeholder="Subject..." id="object" class="object">
         </div>
         <div id="erro"></div>
         <div class="write">
             <textarea name="" id="text" cols="30" rows="10" placeholder="You message..."></textarea>
         </div>
         <span id="wrong"></span>
-        <div class="submit">
-          <button class="send">Send message</button>
+        <div  class="submit">
+          <button type="submit" onclick="ValidateEmail()" class="send" >Send message</button>
         </div>
     </form>
     </div>

@@ -1,195 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Addmin</title>
-    <link rel="stylesheet" href="/addmin.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/addmin.css" />
+  </head>
+  <body onload="getPageContent()">
     <!--sidebar -->
     <div id="mySidebar" class="sidebar">
       <a href="#" class="closebtn" onclick="closeNav()">×</a>
       <a href="#"> <button onclick="myFunction()">DASHBOARD</button></a>
       <a href="#"> <button onclick="myAddmin()">MESSAGES</button></a>
-      <a href="#"><button onclick="myComment()">COMMENTS </button></a>
+      <a href="#"><button onclick="myComment()">COMMENTS</button></a>
       <a href="index.html"> <button>HOME</button></a>
     </div>
     <div id="main">
       <!-- top nav -->
       <div class="topNav">
         <div class="show">
-          <button class="openbtn" onclick="openNav()">☰ Open </button>
+          <button class="openbtn" onclick="openNav()">☰ Open</button>
         </div>
         <div class="dash">
           <h1>DASHBOARD</h1>
         </div>
       </div>
-        <!-- dashboard -->
+      <!-- dashboard -->
       <div id="myDIV">
         <h1>All activities</h1>
-       <form action="" method="get">
-       <div class="add-article">
-       <input type="text" required placeholder="New article" id="name">
-       <button id="update">Add</button>
-       </div> 
-      </form> 
-    
-       <table>
-        <tr>
-            <th>List</th>
-            <th>Date</th>
-            <th>Edit</th>
-            <th>Delete</th>
-        </tr>
-        <tr>
-          <td><li>Introducing Font Awesome Sharp</li></td>
-          <td>AUGAST 31  2022</td>
-          <th>Edit</th>
-          <th>Delete</th>
-    
-        </tr>
-        <tr>
-          <td><li>9 Icon Designers to watch</li></td>
-          <td>June 29, 2022</td>
-          <th>Edit</th>
-          <th>Delete</th>
-        </tr>
-        <tr>
-          <td><li>FA-1 Behind the Icon: Stapler</li></td>
-          <td>July 26, 2022</td>
-            <th>Edit</th>
-            <th>Delete</th>
-        </tr>
-        <tr>
-          <td><li>Upgrading Font Awesome</li></td>
-          <td>June 21, 2022</td>
-            <td>Edit</td>
-            <td>Delete</td>
-        </tr>
-        <tr>
-          <td><li>Company Culture: Why We Hire for Humility (Over Skill)</li></td>
-          <td>February 1, 2022</td>
-          <td>Edit</td>
-          <td>Delete</td>
-        </tr>
-        <tr>
-          <td><li>Commission a Font Awesome Icon</li></td>
-          <td>September 13, 2022
-        </td>
-            <td>Edit</td>
-            <td>Delete</td>
-        </tr>
-      </table>
+        <form id="form" action="" method="get">
+        <div class="visible">
+          <input id="blogTitle" type="text" placeholder="Tittle" value="" />
+        </div>
+        <p id="tittlesMess"></p>  
+       <span  onclick="bold()"class="red" ><span class="fa fa-bold fa-fw" ></span></span>
+       <span  onclick="italic()" class="red"><span class="fa fa-italic fa-fw" ></span></span>
+       <span  onclick="left()" class=" red" ><i class="fas fa-align-left"></i></span>
+       <span  onclick="center()" class="red" ><i class="fas fa-align-center"></i></span>
+       <span  onclick="right()" class="red" ><i class="fas fa-align-right"></i></span>
+       <span  onclick="upper()" class="red" >Upper</span>
+       <span  onclick="lower()" class="red" >Lower</span>
+       <span  onclick="capitalize()" class="red" >Capitalize</span>
+       <span  onclick="clean()" class="red" >Clear</span>
+        <div class="visible">
+          <input id="blogDescription" class="inputBox" type="text" placeholder="Description" />
+        </div>
+        <p id="mess"></p>
+        <div>
+        <input id="uploadImage" type="file" name="photo"  accept=".jpg, .jpeg, .png" />
+        <img id="blah" src="" alt="image" />
+        <a href="#" id="imageData" type="text" target="_blank">
+        </a>
+      </div>
+        <div>
+          <button type="submit" id="blogButton">Add</button>
+        </div>
+      </form>
+        <table id="blogsTable">
+          <tr>
+            <th>Tittle</th>
+            <th>Description</th>
+            <!-- <th>Image</th> -->
+          </tr>
+        </table>
       </div>
       <!-- Addmin pannel -->
       <div class="center-cont" id="center-cont">
         <div class="contact" id="contact">
-          <h1>All messages </h1>
-           <div class="title">
+          <h1>All messages</h1>
+          <div class="title">
             <div class="name">
               <h2>Name</h2>
             </div>
             <div class="email">
-              <h2 >Email</h2>
+              <h2>Email</h2>
             </div>
-            <div  class="dates">
-              <h2>Date</h2>
+            <div class="dates">
+              <h2>subject</h2>
             </div>
             <div class="message">
               <h2>Message</h2>
             </div>
-           </div>
-           <hr>
-           <div class="title">
-            <div class="name">
-              <p>MUTESI Aline</p>
-            </div>
-            <div class="email">
-              <p >ailine@gmail.com</p>
-            </div>
-            <div  class="dates">
-              <p>22-02-2022</p>
-            </div>
-            <div class="message">
-              <p>I would like to thank you alot</p>
-            </div>
-           </div>
-           <hr>
-           <div class="title">
-            <div class="name">
-              <p>GATO Gaspard</p>
-            </div>
-            <div class="email">
-              <p >gato@gmail.com</p>
-            </div>
-            <div  class="dates">
-              <p>01-9-2021</p>
-            </div>
-            <div class="message">
-              <p>Your website looks good keep it up</p>
-            </div>
-           </div>
-           <hr>
-           <div class="title">
-            <div class="name">
-              <p>Emerthe Karabo</p>
-            </div>
-            <div class="email">
-              <p >emerthe7@gmail.com</p>
-            </div>
-            <div  class="dates">
-              <p>22-05-2022</p>
-            </div>
-            <div class="message">
-              <p>Well done freind I like how your website looks.</p>
-            </div>
-           </div>
-           <hr>
-           <div class="title">
-            <div class="name">
-              <p>Pendo NDAHAYO</p>
-            </div>
-            <div class="email">
-              <p >pendo9@gmail.com</p>
-            </div>
-            <div  class="dates">
-              <p>11-8-2021</p>
-            </div>
-            <div class="message">
-              <p>Try to upload more this is helpful</p>
-            </div>
-           </div>
-           <hr>
-           <div class="title">
-            <div class="name">
-              <p>MUNANA Abraham</p>
-            </div>
-            <div class="email">
-              <p >munana6@gmail.com</p>
-            </div>
-            <div  class="dates">
-              <p>05-8-2022</p>
-            </div>
-            <div class="message">
-              <p>Ilike this portfolio try to share others please.</p>
-            </div>
-           </div>
-           <hr>
-         </div>
-        </div>  
-    <div id="user-comment">
-      <h1>All comments</h1>
-      <div class="detail">
-          <p> Joseph,21-11-2022,These article are verry helpfull</p>
-          <p> Peter,21-01-2022,Please try to upload many articles</p>
-          <p> John,06-11-2022, These article are so amazing</p>
-          <p> Emerthe,11-09-2022,Please try to upload many articles</p>
-          <p></p>
+          </div>
+          <hr />
+        </div>
+      </div>
+      <div id="user-comment">
+        <h1>All comments</h1>
+        <div id="commentSection" class="detail"></div>
       </div>
     </div>
-    </div>
-  <script src="/addmin.js"></script>
-</body>
+    <script src="/addmin.js"></script>
+  </body>
 </html>

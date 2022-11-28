@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="/log-in.css">
     <title>Log in</title>
 </head>
-<body>
-  <div class="content">
-    <form id="form" action="/addmin.html" method="get">
+<body >
+  <div class="content" >
+    <form id="form" name="form1" action="/addmin.html" method="get" >
          <div class="text">Please LOG IN</div>
            <div class="field">
-             <input type="text" class="mails"  placeholder="Email...">
+             <input type="text" class="mails" name='text1' placeholder="Email...">
            </div>
            <div id="error"></div>
            <div class="field">
              <input type="password" class="passwd"  placeholder="Password...">
            </div>
            <div id="erro"></div>
-           <button type="submit" class="log">Log in</button>
+           <button type="submit" onclick="ValidateEmail()" class="log">Log in</button>
            <div class="or">Or</div>
            <div class="icon-button">   
              <span class="facebook"><i class="fa fa-facebook"></i>  Facebook</span>

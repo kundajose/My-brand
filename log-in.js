@@ -3,34 +3,27 @@ let form=document.getElementById('form')
      let password=document.querySelector('.passwd')
      let error=document.getElementById('error')
      let erro=document.getElementById('erro')
-      form.addEventListener('submit',(e)=>{
-        let messages=[]
-if(email.value ===''||email.value==null){
-  messages.push('Email is required')
-  e.preventDefault()
-  error.innerText=messages
-}else
-if(email.value.indexOf('@') <=0){
-  messages.push('Email must have @')
-  e.preventDefault()
-  error.innerText=messages
+
+function ValidateEmail()
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(email.value.match(mailformat))
+{
+  error.innerText="";
+document.form1.text1.focus(); 
+return true;
+}
+else if(email.value ===''||email.value==null){
+  error.innerText='Email is required'
+  document.form1.text1.focus(); 
 }
 else
-if(email.value.endsWith('.com') <=0){
-  messages.push('Email must end with .com')
-  e.preventDefault()
-  error.innerText=messages
+{
+  error.innerText="You have entered an invalid email address!";
+document.form1.text1.focus();
+return false;
 }
-else
-if(email.value !=='iradukundajose8@gmail.com'){
-  messages.push('You are not addmin ask a help please')
-  e.preventDefault()
-  error.innerText=messages
-}else{
-  return error.innerText="Correct"
- }
-      })
-     
+}
       form.addEventListener('submit',(e)=>{
         let message=[]
         if(password.value ===''||password.value==null){
@@ -45,17 +38,13 @@ if(email.value !=='iradukundajose8@gmail.com'){
   message.push('Password must be under 20 charaacters')
   e.preventDefault()
   erro.innerText=message
-}else if(password.value=='password'){
-  message.push('Password can not be password')
-  e.preventDefault()
-  erro.innerText=message
 }
 else if(password.value !=='joseph8'){
-  message.push('You are not addmin')
+  message.push('Please correct your password')
   e.preventDefault()
   erro.innerText=message
 }else{
-  return erro.innerText="Correct"
+  return erro.innerText=""
  }
       })
    

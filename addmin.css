@@ -48,7 +48,6 @@
   padding: 10px 15px;
   border: none;
   height: 100px;
- 
 }
 .openbtn:hover {
   background-color: #444;
@@ -94,9 +93,8 @@ tr:nth-child(even) {
 .message{
   width: 40%;
 }
-/* dashboard queries*/
+/* dashboard */
 @media screen and (max-width: 375px) and (min-width: 0px) {
-
   .topNav{
     display: block;
     width: 100%;
@@ -236,9 +234,37 @@ div button,#date{
   .title{
     display: block;
   }
-  
   .message p{
     width: 100%;
   }
 }
-
+/* upload */
+  .visible{
+    padding-top: 20px;
+    height: 100px;
+  }
+  .edit,.delete,.save{
+    width: 40px;
+    height: 20px;
+    font-size: 10px;
+    padding: 0px;
+  }
+  table th td {
+    font-size: 14px;
+  }
+  .red{
+    width:0px;
+    font-size: 15px;
+    padding: 15px;
+   }
+   #blah{
+    height: 100px;
+    width: 100px;
+   }
+   #blogDescription{
+    width: 500px;
+    height: 70px;
+   }
+   #blogTitle{
+    width: 500px;
+   }
