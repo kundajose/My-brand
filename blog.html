@@ -7,30 +7,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Blog</title>
     <link rel="stylesheet" href="/blog.css">
-    
 </head>
 <body>
     <div class="top-nav">
-      
         <i class="fa-sharp fa-solid fa-bars-progress"></i>
         <a href="index.html">HOME</a>
             <a href="https://blog.fontawesome.com/category/icons/">ICON</a>
             <a href="https://fontawesome.com/icons?source=fontawesome_blog">SEARCH ALL</a>
        </div>
-
-
     <div id="awesome">
         <div class="strong">
             <h1>BLOG</h1>
         </div>
-        
         <div class="creative">
          <p>Latest fovorite font awesome icons you may know</p>
         </div>
-        
+        <form action="" method="get"></form>
         <div class="search-container">
-                <form action="action">
-                    <input type="text" placeholder="Search in these articles" name="search" id="search">
+                <form action="action" method="get">
+                    <input type="text" required placeholder="Search in these articles" name="search" id="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
                   </form>
           </div>
@@ -43,7 +38,6 @@
                  <div>
                     <span>AUGAST 31  2022</span>
                     <a href="https://blog.fontawesome.com/introducing-font-awesome-sharp/">  <p>   Introducing Font Awesome Sharp </p></a>
-                   
                  </div>
             </div>
         
@@ -55,10 +49,8 @@
                  <div>
                     <span>July 26, 2022</span>
                     <a href="https://blog.fontawesome.com/fa-1-behind-the-icon-stapler/"><p>  FA-1 Behind the Icon: Staple </p></a>
-                    
                  </div>
             </div>
-         
             <div class="designer">
                  <div class="photo">
                     <a href="https://blog.fontawesome.com/top-icons-designers/">
@@ -67,10 +59,8 @@
                  <div>
                     <span>June 29, 2022</span>
                     <a href="https://blog.fontawesome.com/top-icons-designers/"><p>9 Icon Designers to watch </p></a>
-                     
                  </div>
             </div>
-        
            </div>
            <div>
            <div class="fonts">
@@ -82,10 +72,8 @@
                  <div>
                     <span>September 13, 2022 </span>
                     <a href="https://blog.fontawesome.com/commission-a-font-awesome-icon/">  <p> Commission a Font Awesome Icon </p></a>
-                   
                  </div>
             </div>
-        
              <div class="stapler">
                  <div class="photo">
                     <a href="https://blog.fontawesome.com/upgrade-font-awesome-to-version-6/">
@@ -95,10 +83,8 @@
                     <span>June 21, 2022</span>
                     <a href="https://blog.fontawesome.com/upgrade-font-awesome-to-version-6/"><p>  Upgrading Font Awesome
                     </p></a>
-                    
                  </div>
             </div>
-         
             <div class="designer">
                  <div class="photo">
                     <a href="z">
@@ -107,16 +93,10 @@
                  <div>
                     <span>February 1, 2022</span>
                     <a href="https://blog.fontawesome.com/company-culture/"><p>Company Culture(Over Skill)</p></a>
-                     
                  </div>
             </div>
-          
         </div>
-        <!-- <div class="more">
-            <a href="#"><button class="send" onclick="myComment()">See all commets</button></a>
-        </div> -->
     </div>
-
     <div id="user-comment">
        
         <div class="reaction">
@@ -132,20 +112,23 @@
             <p> Emwerthe, 11-09-2022,  Please try to upload many articles</p>
             <p></p>
         </div>
-      
+        <form id="form" action="" method="post">
      <h2>Type you comment here</h2>   
      <div class="add">
+        <div>
         <input type="text" placeholder="Name" id="name"> <br>
-        <textarea name="" id="comment"placeholder="Add comment"></textarea> <br>
+    </div>
+        <span id="username"></span>
+        <div>
+        <textarea name="" id="comment"  placeholder="Add comment"></textarea> <br>
+    </div>
+        <span id="wrong"></span>
         <button id="update">Add comment</button>
         <button id="likes">Like</button>
-        
-       
+        <p id="success"></p>
+    </form>
      </div>
-    
     </div>
-
-
         <div class="footer" >
             <div class="address" >
                 <div>
@@ -171,7 +154,6 @@
                     <a href="https://github.com/kundajose"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
-            
         </div>
         <script src="/blog.js"></script>
 </body>

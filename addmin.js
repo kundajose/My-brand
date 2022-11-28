@@ -6,9 +6,7 @@ let data= document.querySelector('td')
 
 function join(){
   let firstN=document.querySelector('#name').value
-  let firstD=document.querySelector('#date').value
   names.innerHTML +=firstN
-  data.innerHTML += firstD
 
 }
 // open and close dashbboard

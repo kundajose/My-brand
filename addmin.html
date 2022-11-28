@@ -16,7 +16,6 @@
       <a href="#"><button onclick="myComment()">COMMENTS </button></a>
       <a href="index.html"> <button>HOME</button></a>
     </div>
-   
     <div id="main">
       <!-- top nav -->
       <div class="topNav">
@@ -27,17 +26,15 @@
           <h1>DASHBOARD</h1>
         </div>
       </div>
-      
-     
         <!-- dashboard -->
       <div id="myDIV">
         <h1>All activities</h1>
-        
+       <form action="" method="get">
        <div class="add-article">
-       <input type="text" placeholder="New article" id="name">
+       <input type="text" required placeholder="New article" id="name">
        <button id="update">Add</button>
        </div> 
-      
+      </form> 
     
        <table>
         <tr>
@@ -84,10 +81,8 @@
             <td>Edit</td>
             <td>Delete</td>
         </tr>
-
       </table>
       </div>
-     
       <!-- Addmin pannel -->
       <div class="center-cont" id="center-cont">
         <div class="contact" id="contact">
@@ -183,8 +178,7 @@
            </div>
            <hr>
          </div>
-        </div> 
-        
+        </div>  
     <div id="user-comment">
       <h1>All comments</h1>
       <div class="detail">
@@ -195,10 +189,7 @@
           <p></p>
       </div>
     </div>
-
-
     </div>
-    
   <script src="/addmin.js"></script>
 </body>
 </html>

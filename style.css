@@ -9,7 +9,6 @@ html {
 }
 #expand{
   display:none;
-  
 }
 .top-nav{
     display: flex;
@@ -38,14 +37,12 @@ a{
     color: white;
     margin-top: -60px;
   }
-
   #welcome h1{
     padding: 40px;
     font-size: 40px;
     text-align: center;
     height: 150px;
     font-family: 'Poppins', sans-serif;
-
     background-color: cyan;
     border: 2px solid orange;
     border-radius: 0px 360px 0px 0px;
@@ -59,8 +56,6 @@ a{
     height: 550px;
     background-color: #020222;
   }
- 
-  
   .left-side{
  float: left;
  width: 49%;
@@ -73,10 +68,7 @@ a{
     width: 49%;
     height: 350px;
     padding-top: 100px;
-   
- 
   }
-  
   .left-side img{
     float: right;
        height: 340px;
@@ -104,8 +96,6 @@ height: 300px;
   from {left: 0px;}
   to {left: 100px;}
 }
-
-
 #about{
   height: 500px;
   background-color: #e6ffe0;
@@ -119,7 +109,6 @@ height: 300px;
     float: right;
     shape-outside: circle(50%);
   }
-
 .work{
 height: 400px;
   }
@@ -128,7 +117,6 @@ height: 400px;
    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 25px;
   }
- 
  /* skills */
  #skills{
   height: 550px;
@@ -162,8 +150,6 @@ height: 400px;
   font-size: 20px;
   height: 80px;
   padding-top: 35px;
-
-
 }
 .skills{
   display: flex;
@@ -181,7 +167,6 @@ height: 400px;
   text-align: center;
   background-color: rgb(27, 145, 126);
 }
-
 .verrygood img,.good img,.excellent img{
   margin-top: 15px;
   border: 1px ;
@@ -189,7 +174,6 @@ height: 400px;
   width: 110px;
   border-radius: 100px;
 } 
-
 /* my work */
 #work{
   height: 550px;
@@ -202,18 +186,15 @@ border-radius: 20px;
   background-color: gray;
   padding-top: 15px;
   text-align: center;
-
 }
 
 .restourant img,.khan img,.level img{
   height: 250px;
   width: 90%;
- 
 } 
-
 /* contact */
 #contact{
-  height: 550px;
+  height: 700px;
 }
 .contact{
   text-align: center;
@@ -230,10 +211,10 @@ border-radius: 20px;
 .free p{
   font-size: 20px;
 }
-
 .name,.email{
-  width: 500px;
+  width: 1010px;
   height: 50px;
+  margin-top: 20px;
  background-color: rgb(233, 224, 224);
  font-size: 20px;
  border: 2px solid;
@@ -245,11 +226,10 @@ border-radius: 20px;
   background-color: rgb(233, 224, 224);
   font-size: 20px;
   border: 2px solid;
-
 }
 #text{
   width: 1010px;
-  height: 140px;
+  height: 130px;
   background-color: rgb(233, 224, 224);
   font-size: 20px;
   border: 2px solid;
@@ -257,7 +237,6 @@ border-radius: 20px;
 .submit{
  text-align: center;
  padding-top: 15px;
-  
 }
 .send{
   width: 300px;
@@ -274,6 +253,7 @@ border-radius: 20px;
 
 /* blog */
 #awesome{
+  margin-top: 50px;
   height: 650px;
   background-color: #e6ffe0;
 }
@@ -284,7 +264,6 @@ border-radius: 20px;
 .more{
   text-align: center;
   padding-top: 15px;
-   
  }
  .send{
    width: 300px;
@@ -298,30 +277,27 @@ border-radius: 20px;
   padding-top: 30px;
   border-radius: 20px;
 }  
-
  /* footer */
  .footer{
   display: flex;
- justify-content: space-around;
+ justify-content:space-evenly;
  height: 250px;
  background-color: #02172d;
 }
 .address{
   margin-top: 40px;
   color: white;
-  width: 50%;
-padding-left: 90px;
+  width: 0%;
 }
 .addres{
+padding-left: 280px;
   margin-top: 40px;
   color: white;
   width: 50%;
-  text-align: center;
 }
 .icon{
   margin-top: 40px;
   font-size: 30px;
-
 }
 .fa-brands{
   color: white;
@@ -333,13 +309,10 @@ padding-left: 90px;
 .fa-twitter,.fa-github{
   margin-left: 15px;
 }
-
 .link a{
   display: block;
   color: white;
   font-size: 30px;
-  
-
 }
 .call{
   padding-top: 20px;
@@ -351,6 +324,19 @@ h2>span{
 img {
   height: auto;
   max-width: 100%;
+}
+/* validation messages */
+#error{
+  color: red;
+}
+#username{
+  color: red;
+}
+#wrong{
+  color: red;
+}
+#erro{
+  color: red;
 }
 @media screen and (max-width: 280px){
   #home{
@@ -392,14 +378,14 @@ display: block;
 #about{
   height: 380px;
 }
-    .engineer p{
-      padding: 10px 0 0 5px;
-      font-size: 15px;
-    }
-    .right-image img{
+.engineer p{
+  padding: 10px 0 0 5px;
+  font-size: 15px;
+}
+.right-image img{
       width: 150px;
       height: 150px;
-    }
+}
 #skills{
   height: 600px;
  }
@@ -473,13 +459,14 @@ display: block;
   .introduction,.designer{
    display: none;
   } 
-  
   .footer{
    height: 150px;
+   display: flex;
+   justify-content: space-between;
   }
   .address{
-  padding-left: 0px;
   font-size: 10px;
+  
   }
   .addres{
     text-align: none;
@@ -490,9 +477,8 @@ display: block;
     font-size: 10px;
   }
   .fa-twitter,.fa-github{
-    margin-left: 15px;
+    margin-left: 5px;
   }
-  
   .link a{
     font-size: 13px;
   }
@@ -502,17 +488,14 @@ display: block;
   h2>span{
     font-size: 10px;
   }
-
 }
 @media screen and (max-width: 320px){
-  
   #expand{
     display: block;
     width: 100%;
     position: fixed;
     z-index: 1;
     font-size: 40px;
-    /* padding-top: 20px; */
   }
   .top-nav{
     height: 39%;
@@ -525,7 +508,6 @@ display: block;
     transition: 0.5s;
     padding-top: 0px;
     display: block;
-
   }
   .top-nav a{
     font-size: 22px;
@@ -534,7 +516,6 @@ display: block;
     padding-top: 10px;
     }
 }
-
 @media screen and (max-width: 375px) and (min-width: 310px) {
  
   #expand{
@@ -556,7 +537,6 @@ display: block;
     transition: 0.5s;
     padding-top: 0px;
     display: block;
-
   }
   .top-nav a{
     font-size: 22px;
@@ -570,7 +550,6 @@ display: block;
     #welcome h1{
       font-size: 25px;
     }
-
   #home{
     height: 560px;
     background-color: #020222;
@@ -597,7 +576,6 @@ display: block;
       from {left: 0px;}
       to {left: 20px;}
     }
-
 #about{
   height: 560px;
 }
@@ -679,34 +657,45 @@ display: block;
   .introduction,.designer{
    display: none;
   } 
-  
   .footer{
    height: 150px;
+   /* display: flex;
+   justify-content: space-between; */
   }
-  .address{
-  padding-left: 0px;
-  font-size: 10px;
-  }
-  .addres{
-    text-align: none;
-    font-size: 10px;
-    padding-left: 10px;
-  }
-  .icon{
-    font-size: 10px;
-  }
-  .fa-twitter,.fa-github{
-    margin-left: 15px;
-  }
+  .footer{
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+   }
+   .address{
+   font-size: 10px;
+   padding-left: 20px;
+   
+   }
+   .addres{
+     text-align: none;
+     font-size: 10px;
+     padding-left: 10px;
+   }
+   .icon{
+     font-size: 15px;
+   }
+   .fa-twitter,.fa-github{
+     margin-left: 5px;
+   }
   
   .link a{
-    font-size: 13px;
+    font-size: 15px;
   }
   .call{
-    font-size: 7px;
+    font-size: 10px;
   }
   h2>span{
     font-size: 10px;
+  }
+  #username{
+    color: red;
+    margin-top: -69px;
   }
 }
 @media screen and (max-width: 425px) and (min-width:400px){
@@ -719,7 +708,6 @@ display: block;
     } 
 }
 @media screen and (max-width: 550px) and (min-width:376px) {
-   
   #expand{
     display: block;
     width: 100%;
@@ -739,7 +727,6 @@ display: block;
     transition: 0.5s;
     padding-top: 0px;
     display: block;
-
   }
   .top-nav a{
     font-size: 25px;
@@ -750,7 +737,6 @@ display: block;
     .fa-bars-progress{
       display: none;
    }
-  
   #home{
     height: 560px;
     background-color: #020222;
@@ -777,7 +763,6 @@ display: block;
       from {left: 0px;}
       to {left: 20px;}
     }
-  
 #welcome h1{
   font-size: 25px;
 }
@@ -842,14 +827,14 @@ display: block;
     padding-right:0px;
   }
   .name,.email{
-    width: 400px;
+    width: 350px;
     margin-top: 20px;
   }
   .object{
-    width: 400px;
+    width: 350px;
   }
   #text{
-    width: 400px;
+    width: 350px;
   }
   #awesome{
     height: 650px;
@@ -863,23 +848,26 @@ display: block;
    display: none;
   } 
   .footer{
-   height: 150px;
-  }
-  .address{
-  padding-left: 0px;
-  font-size: 10px;
-  }
-  .addres{
-    text-align: none;
-    font-size: 10px;
-    padding-left: 10px;
-  }
-  .icon{
-    font-size: 15px;
-  }
-  .fa-twitter,.fa-github{
-    margin-left: 15px;
-  }
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+   }
+   .address{
+   font-size: 10px;
+   padding-left: 0px;
+   
+   }
+   .addres{
+     text-align: none;
+     font-size: 10px;
+     padding-left: 10px;
+   }
+   .icon{
+     font-size: 15px;
+   }
+   .fa-twitter,.fa-github{
+     margin-left: 5px;
+   }
   
   .link a{
     font-size: 20px;
@@ -890,10 +878,8 @@ display: block;
   h2>span{
     font-size: 15px;
   }
-
 }
 @media screen and (max-width: 700px) and (min-width:551px) {
-  
   #expand{
     display: block;
     width: 100%;
@@ -913,7 +899,6 @@ display: block;
     transition: 0.5s;
     padding-top: 0px;
     display: block;
-
   }
   .top-nav a{
     font-size: 22px;
@@ -924,7 +909,6 @@ display: block;
     .fa-bars-progress{
       display: none;
    }
-  
   #home{
     height: 900px;
     background-color: #020222;
@@ -950,7 +934,6 @@ display: block;
       from {left: 0px;}
       to {left: 20px;}
     }
-  
 #welcome h1{
   font-size: 25px;
 }
@@ -1061,8 +1044,6 @@ display: block;
   h2>span{
     font-size: 15px;
   }
-
-
 }
 @media screen and (max-width: 900px) and (min-width: 701px) {
   
@@ -1085,7 +1066,6 @@ display: block;
     transition: 0.5s;
     padding-top: 0px;
     display: block;
-
   }
   .top-nav a{
     font-size: 25px;
@@ -1096,8 +1076,6 @@ display: block;
     .fa-bars-progress{
       display: none;
    }
-
-
   #home{
     height: 580px;
     background-color: #020222;
@@ -1157,9 +1135,30 @@ display: block;
   .photos{
     padding: 0px 15px 0 15px;
   }
+  /* footer */
+  .footer{
+    height: 280px;
+    display: flex;
+    justify-content: space-around;
+   }
+   .address{
+   font-size: 10px;
+   padding-left: 0px;
+   
+   }
+   .addres{
+     text-align: none;
+     font-size: 10px;
+     padding-left: 65px;
+   }
+   .icon{
+     font-size: 30px;
+   }
+   .fa-twitter,.fa-github{
+     margin-left: 20px;
+   }
 }
 @media screen and (max-width: 1100px) and (min-width:901px) {
-  
   #expand{
     display: block;
     width: 100%;
@@ -1178,7 +1177,6 @@ display: block;
     transition: 0.5s;
     padding-top: 0px;
     display: block;
-
   }
   .top-nav a{
     font-size: 25px;
@@ -1198,7 +1196,7 @@ display: block;
    padding-right: 200px;
   }
   .name,.email{
-    width: 440px;
+    width: 880px;
   }
   .object{
     width: 880px;
@@ -1209,6 +1207,28 @@ display: block;
   .photos{
     padding: 0px 15px 0 15px;
   }
+  /* footer */
+  .footer{
+    height: 280px;
+    display: flex;
+    justify-content: space-around;
+   }
+   .address{
+   font-size: 10px;
+   padding-left: 0px;
+   
+   }
+   .addres{
+     text-align: none;
+     font-size: 10px;
+     padding-left: 65px;
+   }
+   .icon{
+     font-size: 30px;
+   }
+   .fa-twitter,.fa-github{
+     margin-left: 20px;
+   }
 }
 @media screen and (max-width: 1500px) and (min-width: 1101px) {
   .top-nav a{

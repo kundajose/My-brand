@@ -47,7 +47,6 @@ body{
   box-shadow: inset 2px 2px 5px #babecc,
               inset -5px -5px 10px #ffffff73;
 }
-
 .field label{
   position: absolute;
   top: 50%;
@@ -96,4 +95,10 @@ button{
   color: #3498db;
   box-shadow: inset 2px 2px 5px #ccc6ba,
               inset -5px -5px 10px #ffffff73;
+}
+#error{
+  color: red;
+}
+#erro{
+  color: red;
 }
