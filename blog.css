@@ -197,7 +197,13 @@ button{
     margin-top: 10px;
 
 }
-
+/* validation */
+#username{
+  color: red;
+}
+#wrong{
+  color: red;
+}
 
   @media screen and (max-width: 320px) and (min-width:0px) {
     #awesome{

@@ -10,25 +10,24 @@
 </head>
 <body>
   <div class="content">
+    <form id="form" action="/addmin.html" method="get">
          <div class="text">Please LOG IN</div>
            <div class="field">
-             <input type="text" placeholder="Email...">
+             <input type="text" class="mails"  placeholder="Email...">
            </div>
+           <div id="error"></div>
            <div class="field">
-             <input type="password" placeholder="Password...">
+             <input type="password" class="passwd"  placeholder="Password...">
            </div>
-           <a href="/addmin.html"><button>Log in</button></a>
-           
-           
+           <div id="erro"></div>
+           <button type="submit" class="log">Log in</button>
            <div class="or">Or</div>
-           <div class="icon-button"> 
-               
+           <div class="icon-button">   
              <span class="facebook"><i class="fa fa-facebook"></i>  Facebook</span>
-   
              <span><i class="fa fa-google"></i>  Google</span>
-   
-   
            </div>
+          </form>
      </div>
+     <script src="/log-in.js"></script>
 </body>
 </html>

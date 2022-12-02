@@ -13,15 +13,12 @@
        <div class="top-nav">
         <a href="javascript:void(0)" id="closebtn"></a>
         <i class="fa-sharp fa-solid fa-bars-progress"></i>
-        
-           <!-- <a href="#home">Home</a> -->
            <a href="#home" onclick="closeNav()"> Home</a>
             <a href="#about" onclick="closeNav()">About me</a>
             <a href="#skills" onclick="closeNav()">Skills</a>
             <a href="#work" onclick="closeNav()">Work</a>
             <a href="#contact" onclick="closeNav()">Contact</a>
             <a href="#awesome" onclick="closeNav()">Blog</a>
-            <!-- <a href="#">ADDMIN</a> -->
             <a href="log-in.html">Log in</a>
        </div>
            <!-- Home page section -->
@@ -42,7 +39,6 @@
                          </p>
                         </div>
                     </div>
-              
                 </div>
             </div> 
         </div> 
@@ -66,10 +62,7 @@
                        </p>
                     </div>
                </div>
-               
-                  
             </div>
-
        </div>
     </div>   
 <!-- skills -->
@@ -77,7 +70,6 @@
       <div class="strong">
          <h1>SKILLS</h1>
      </div>
-
      <div>
    <div class="creative">
       <p>
@@ -87,9 +79,7 @@
 </div>
    </div>
    <div class="skills">
-    
    <div class="next"><i class="fa-solid fa-circle-chevron-left"></i></div>
-       
    <div class="excellent">
            <div>
                <img src="https://res.cloudinary.com/dgrbwszci/image/upload/v1668748356/Screenshot_from_2022-11-16_00-51-11_buzkxk.png" alt="">
@@ -99,9 +89,7 @@
                 <h2>  Excellent at HTML </h2>
                 <h2>95%</h2>
             </div>
-           
        </div>
-
         <div class="verrygood">
             <div>
                <img src="https://res.cloudinary.com/dgrbwszci/image/upload/v1668748386/Screenshot_from_2022-11-16_01-00-40_oxmffs.png" alt="">
@@ -112,7 +100,6 @@
                 <h2>80%</h2>
             </div>
        </div>
-    
        <div class="good">
             <div>
                 <img src="https://res.cloudinary.com/dgrbwszci/image/upload/v1668748419/Screenshot_from_2022-11-16_02-43-49_g3fika.png" alt="">
@@ -124,22 +111,17 @@
             </div>
        </div>
        <div class="next"><i class="fa-solid fa-circle-chevron-right"></i></div>
-
        </div>
-
     </div>
     <!-- my work -->
     <div id="work">
     <div class="strong">
         <h1>MY WORK</h1>
     </div>
-
   <div class="creative">
      <p>
         You are welcome all, you are valuable in my sight,these
          are my latest projects, I invite you to explore them as you wish.
-
-
    </p>
   </div>
   <div class="skills">
@@ -147,37 +129,30 @@
       <div class="restourant">
           <div>
             <a target="_blank" rel="noopener" href="https://cut-childish-explanation.glitch.me" > <img src="https://res.cloudinary.com/dgrbwszci/image/upload/v1647191804/Screenshot_from_2022-03-13_19.16.17_gpk6xb.png" alt=""></a>
-             
            </div>
            <div class="academy">
                <h2>   Restourant website  </h2>
            </div>
       </div>
-
        <div class="khan">
            <div>
             <a target="_blank" rel="noopener" href="https://alike-basalt-chive.glitch.me" ><img src="https://res.cloudinary.com/dgrbwszci/image/upload/v1647289596/Screenshot_from_2022-03-14_22.25.57_pyyd93.png" alt=""></a>
-              
            </div>
            <div class="academy">
                <h2>  Khan academy website </h2>
            </div>
       </div>
-   
       <div class="level">
            <div>
             <a target="_blank" rel="noopener" href="https://like-thrilling-pruner.glitch.me" > <img src="https://res.cloudinary.com/dgrbwszci/image/upload/v1647131775/Screenshot_from_2022-03-13_02.34.58_o7uewd.png" alt=""></a>
-              
            </div>
            <div class="academy">
                <h2>Level ground website </h2>
            </div>
       </div>
       <div class="next"><i class="fa-solid fa-circle-chevron-right"></i></div>
-
      </div>
     </div>
-    
    <!-- contact -->
    <div class="contact" id="contact">
         <div class="contact-me">
@@ -188,27 +163,36 @@
             that we can do more better together. My email: iradukundajose8@gmail.com 
           </P>
       </div>
-       
+    <form id="form" action="" method="post">
        <div class="write">
-          <input type="text" placeholder="Your Name..." class="name">
-          <input type="text" placeholder="Your Email..." class="email">
+        <div>
+            <div>
+             <input type="text" placeholder="Your Name..." class="name">
+           </div>
+           <span id="username"></span>
+           <div>
+             <input type="text" placeholder="Your Email..." class="email">
+            </div>
+             <span id="error"></span>
         </div>
         <div class="write">
-            <input type="text" placeholder="Object..." class="object">
+            <input type="text" placeholder="Subject..." class="object">
         </div>
+        <div id="erro"></div>
         <div class="write">
-            <textarea name="" id="text" cols="30" rows="10">You message...</textarea>
+            <textarea name="" id="text" cols="30" rows="10" placeholder="You message..."></textarea>
         </div>
+        <span id="wrong"></span>
         <div class="submit">
           <button class="send">Send message</button>
         </div>
+    </form>
     </div>
 <!-- blog page -->
 <div id="awesome">
 <div class="strong">
     <h1>BLOG</h1>
 </div>
-
 <div class="creative">
  <p>The fovorite font awesome icons you may know</p>
 </div>
@@ -221,10 +205,8 @@
          <div>
             <span>AUGAST 31  2022</span>
             <a href="https://blog.fontawesome.com/introducing-font-awesome-sharp/">  <p>   Introducing Font Awesome Sharp </p></a>
-           
          </div>
     </div>
-
      <div class="stapler">
          <div class="photos">
             <a href="https://blog.fontawesome.com/fa-1-behind-the-icon-stapler/">
@@ -233,10 +215,8 @@
          <div>
             <span>July 26, 2022</span>
             <a href="https://blog.fontawesome.com/fa-1-behind-the-icon-stapler/"><p>  FA-1 Behind the Icon: Staple </p></a>
-            
          </div>
     </div>
- 
     <div class="designer">
          <div class="photos">
             <a href="https://blog.fontawesome.com/top-icons-designers/">
@@ -245,18 +225,15 @@
          <div>
             <span>June 29, 2022</span>
             <a href="https://blog.fontawesome.com/top-icons-designers/"><p>9 Icon Designers to watch </p></a>
-             
          </div>
     </div>
-
    </div>
    <div class="more">
     <a href="blog.html"><button class="send">Read more</button></a>
 </div>
 </div>
-
 <!-- footer -->
-<div class="footer" >
+<main class="footer" >
     <div class="address" >
         <div>
             <h1>CONTACT</h1>
@@ -281,9 +258,7 @@
             <a href="https://github.com/kundajose"><i class="fa-brands fa-github"></i></a>
         </div>
     </div>
-    
-</div>
-
+</main>
 <script src="/script.js"></script>
 </body>
 </html>
